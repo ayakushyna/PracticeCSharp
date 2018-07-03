@@ -1,0 +1,10 @@
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\bin\Debug\Task6.1.exe.config
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\bin\Debug\Task6.1.exe
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\bin\Debug\Task6.1.pdb
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6.1.csprojAssemblyReference.cache
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6._1.Form.resources
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6._1.Properties.Resources.resources
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6.1.csproj.GenerateResource.cache
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6.1.csproj.CoreCompileInputs.cache
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6.1.exe
+C:\Users\Anastasia\source\repos\Task6.1\Task6.1\obj\Debug\Task6.1.pdb
