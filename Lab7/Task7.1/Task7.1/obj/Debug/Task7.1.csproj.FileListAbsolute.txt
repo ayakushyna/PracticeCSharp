@@ -1,0 +1,13 @@
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7._1.Form1.resources
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7._1.Form2.resources
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7._1.Form3.resources
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7._1.Form4.resources
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7._1.Properties.Resources.resources
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7.1.csproj.GenerateResource.cache
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7.1.csproj.CoreCompileInputs.cache
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\bin\Debug\Task7.1.exe.config
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\bin\Debug\Task7.1.exe
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\bin\Debug\Task7.1.pdb
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7.1.csprojAssemblyReference.cache
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7.1.exe
+C:\Users\Anastasia\source\repos\Task7.1\Task7.1\obj\Debug\Task7.1.pdb
