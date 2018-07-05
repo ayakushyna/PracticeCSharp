@@ -11,14 +11,7 @@ namespace FinalTask
         public string Name { get; set; }
         public Person Author { get; set; }
         public DateTime PublicationDate { get; set; }
-
-        public Paper()
-        {
-            Name = " ";
-            Author = new Person();
-            PublicationDate = new DateTime();
-        }
-
+        
         public Paper(string name, Person author, DateTime publicationDate)
         {
             Name = name;
@@ -26,9 +19,11 @@ namespace FinalTask
             PublicationDate = publicationDate;
         }
 
+        public Paper() : this(" ", new Person(), new DateTime()) { }
+
         public override string ToString()
         {
-            return String.Format("Paper's name: {0} \nAuthor - {1} \nPublication date: {2}", Name, Author.ToString(), PublicationDate.ToString());
+            return String.Format("Paper's name: {0}, Author - {1}, Publication date: {2}", Name, Author.ToString(), PublicationDate.ToString());
         }
     }
 }

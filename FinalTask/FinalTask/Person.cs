@@ -10,30 +10,31 @@ namespace FinalTask
     {
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
-        public DateTime Birthday { get; private set; }
+        public DateTime BirthDate { get; private set; }
+
         public int BirthYear
         {
-            get { return Birthday.Year; }
-            set { Birthday = new DateTime(value, Birthday.Month, Birthday.Day); }
+            get { return BirthDate.Year; }
+            set { BirthDate = new DateTime(value, BirthDate.Month, BirthDate.Day); }
         }
-        public Person()
-        {
-            FirstName = " ";
-            LastName = " ";
-            Birthday = new DateTime();
-        }
-
-        public Person (string firstName, string lastName, DateTime birthday)
+        
+        public Person (string firstName, string lastName, DateTime birthDate)
         {
             FirstName = firstName;
             LastName = lastName;
-            Birthday = birthday;
+            BirthDate = birthDate;
         }
+
+        public Person() : this(" ", " ", new DateTime()) { }
 
         public override string ToString()
         {
-            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", FirstName, LastName, Birthday);
+            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", FirstName, LastName, BirthDate);
         }
 
+        public virtual string ToShortString()
+        {
+            return String.Format("Person's firstname: {0}, lastname: {1}", FirstName, LastName);
+        }
     }
 }
