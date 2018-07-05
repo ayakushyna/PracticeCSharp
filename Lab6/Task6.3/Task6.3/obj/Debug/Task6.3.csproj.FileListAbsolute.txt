@@ -1,0 +1,9 @@
+D:\fit2\Task6.3\Task6.3\bin\Debug\Task6.3.exe.config
+D:\fit2\Task6.3\Task6.3\bin\Debug\Task6.3.exe
+D:\fit2\Task6.3\Task6.3\bin\Debug\Task6.3.pdb
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6.3.csprojResolveAssemblyReference.cache
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6._3.Form1.resources
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6._3.Properties.Resources.resources
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6.3.csproj.GenerateResource.Cache
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6.3.exe
+D:\fit2\Task6.3\Task6.3\obj\Debug\Task6.3.pdb
