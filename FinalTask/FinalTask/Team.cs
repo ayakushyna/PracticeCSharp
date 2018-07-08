@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace FinalTask
 {
-    class Team
+    class Team: INameAndCopy, IComparable<Team>
     {
-        public string Name {get; private set;}
-        public int RegistrationNumber
-        {
-            get; 
-            private set
+        public string Name {get; set;}
+
+        protected int registrationNumber;
+        public int RegistrationNumber {
+            get { return registrationNumber; }
+            set
             {
-                if( value <= 0 ) throw new Exception("Постарайтесь побольше");
+                if( value <= 0 ) throw new Exception("Wrong number");
+                else registrationNumber = value;
             } 
         }
 
@@ -33,12 +35,14 @@ namespace FinalTask
 
         public override bool Equals(object obj)
         {
-            Team teamObj = obj as Team;
-            if (teamObj == null)
+            if (obj == null)
                 return false;
             else
+            {
+                Team teamObj = obj as Team; 
                 return Name.Equals(teamObj.Name) &&
                     RegistrationNumber.Equals(teamObj.RegistrationNumber);
+            }
 
         }
 
@@ -58,12 +62,17 @@ namespace FinalTask
             RegistrationNumber.GetHashCode();
         }
 
-        public override object DeepCopy()
+        public virtual object DeepCopy()
         {
-            Team other = (Team)this.MemberwiseClone();
+            Team other = (Team)MemberwiseClone();
             other.Name = String.Copy(Name);
             other.RegistrationNumber = RegistrationNumber;
             return other;
+        }
+
+        public int CompareTo(Team teamObj)
+        {
+            return RegistrationNumber.CompareTo(teamObj.RegistrationNumber);
         }
     }
 }

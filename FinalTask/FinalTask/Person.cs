@@ -8,6 +8,7 @@ namespace FinalTask
 {
     class Person: INameAndCopy
     {
+        public string Name { get; set; }
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public DateTime BirthDate { get; private set; }
@@ -29,7 +30,7 @@ namespace FinalTask
 
         public override string ToString()
         {
-            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", FirstName, LastName, BirthDate);
+            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", FirstName, LastName, BirthDate.ToShortDateString());
         }
 
         public virtual string ToShortString()
@@ -39,13 +40,15 @@ namespace FinalTask
 
         public override bool Equals(object obj)
         {
-            Person personObj = obj as Person;
-            if (personObj == null)
+            if (obj == null)
                 return false;
             else
+            {
+                Person personObj = obj as Person;
                 return FirstName.Equals(personObj.FirstName) &&
                     LastName.Equals(personObj.LastName) &&
                     BirthDate.Equals(personObj.BirthDate);
+            }
 
         }
 
@@ -66,9 +69,9 @@ namespace FinalTask
             BirthDate.GetHashCode();
         }
 
-        public override object DeepCopy()
+        public object DeepCopy()
         {
-            Person other = (Person)this.MemberwiseClone();
+            Person other = (Person)MemberwiseClone();
             other.FirstName = String.Copy(FirstName);
             other.LastName = String.Copy(LastName);
             other.BirthDate = new DateTime(BirthDate.Year, BirthDate.Month, BirthDate.Day);

@@ -11,3 +11,10 @@ C:\Users\Student\Downloads\ayakushyna-practicecsharp-d54de3c588fc\FinalTask\Fina
 C:\Users\Student\Downloads\ayakushyna-practicecsharp-d54de3c588fc\FinalTask\FinalTask\bin\Debug\FinalTask.exe
 C:\Users\Student\Downloads\ayakushyna-practicecsharp-d54de3c588fc\FinalTask\FinalTask\bin\Debug\FinalTask.pdb
 C:\Users\Student\Downloads\ayakushyna-practicecsharp-d54de3c588fc\FinalTask\FinalTask\obj\Debug\FinalTask.csprojResolveAssemblyReference.cache
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\obj\Debug\FinalTask.csprojAssemblyReference.cache
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\obj\Debug\FinalTask.csproj.CoreCompileInputs.cache
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\obj\Debug\FinalTask.exe
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\obj\Debug\FinalTask.pdb
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\bin\Debug\FinalTask.exe.config
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\bin\Debug\FinalTask.exe
+C:\Users\Anastasia\source\practicecsharp\FinalTask\FinalTask\bin\Debug\FinalTask.pdb

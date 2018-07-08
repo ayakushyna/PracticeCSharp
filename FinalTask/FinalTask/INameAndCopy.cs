@@ -9,6 +9,6 @@ namespace FinalTask
     interface INameAndCopy
     {
         string Name { get; set;}
-        virtual object DeepCopy(); 
+        object DeepCopy(); 
     }
 }

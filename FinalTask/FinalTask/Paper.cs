@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalTask
 {
-    class Paper
+    class Paper: INameAndCopy
     {
         public string Name { get; set; }
         public Person Author { get; set; }
@@ -23,7 +23,16 @@ namespace FinalTask
 
         public override string ToString()
         {
-            return String.Format("Paper's name: {0}, Author - {1}, Publication date: {2}", Name, Author.ToString(), PublicationDate.ToString());
+            return String.Format("Paper's name: {0}, Author - {1}, Publication date: {2}", Name, Author.ToString(), PublicationDate.ToShortDateString());
+        }
+
+        public virtual object DeepCopy()
+        {
+            Paper other = (Paper)MemberwiseClone();
+            other.Name = String.Copy(Name);
+            other.Author = (Person)Author.DeepCopy();
+            other.PublicationDate = new DateTime(PublicationDate.Year, PublicationDate.Month, PublicationDate.Day);
+            return other;
         }
     }
 }
