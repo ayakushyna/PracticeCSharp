@@ -253,7 +253,7 @@ namespace FinalTask
             Console.WriteLine(p.ToString());
         }
         */
-            /*
+            
                 ResearchTeam researchTeam1 = new ResearchTeam("Dolphins", "LoveDolphins", 102, TimeFrame.TwoYears);
 
                 Person[] members1 = new Person[2];
@@ -316,7 +316,7 @@ namespace FinalTask
                 {
                     Console.WriteLine(teams.ToString());
                 }
-                */
+                
 
 
             TestCollections test = new TestCollections(1000);

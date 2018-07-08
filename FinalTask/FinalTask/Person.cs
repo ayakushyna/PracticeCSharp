@@ -9,7 +9,6 @@ namespace FinalTask
     class Person: INameAndCopy
     {
         public string Name { get; set; }
-        public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public DateTime BirthDate { get; private set; }
 
@@ -21,7 +20,7 @@ namespace FinalTask
         
         public Person (string firstName, string lastName, DateTime birthDate)
         {
-            FirstName = firstName;
+            Name = firstName;
             LastName = lastName;
             BirthDate = birthDate;
         }
@@ -30,12 +29,12 @@ namespace FinalTask
 
         public override string ToString()
         {
-            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", FirstName, LastName, BirthDate.ToShortDateString());
+            return String.Format("Person's firstname: {0}, lastname: {1}, birthday: {2}", Name, LastName, BirthDate.ToShortDateString());
         }
 
         public virtual string ToShortString()
         {
-            return String.Format("Person's firstname: {0}, lastname: {1}", FirstName, LastName);
+            return String.Format("Person's firstname: {0}, lastname: {1}", Name, LastName);
         }
 
         public override bool Equals(object obj)
@@ -45,7 +44,7 @@ namespace FinalTask
             else
             {
                 Person personObj = obj as Person;
-                return FirstName.Equals(personObj.FirstName) &&
+                return Name.Equals(personObj.Name) &&
                     LastName.Equals(personObj.LastName) &&
                     BirthDate.Equals(personObj.BirthDate);
             }
@@ -64,7 +63,7 @@ namespace FinalTask
 
         public override int GetHashCode()
         {
-            return FirstName.GetHashCode() ^
+            return Name.GetHashCode() ^
             LastName.GetHashCode() ^
             BirthDate.GetHashCode();
         }
@@ -72,7 +71,7 @@ namespace FinalTask
         public object DeepCopy()
         {
             Person other = (Person)MemberwiseClone();
-            other.FirstName = String.Copy(FirstName);
+            other.Name = String.Copy(Name);
             other.LastName = String.Copy(LastName);
             other.BirthDate = new DateTime(BirthDate.Year, BirthDate.Month, BirthDate.Day);
             return other;
